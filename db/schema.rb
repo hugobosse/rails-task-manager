@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170214105502) do
 
-  create_table "task_managers", force: :cascade do |t|
+  create_table "tasks", force: :cascade do |t|
     t.string   "name"
     t.boolean  "done"
     t.datetime "created_at", null: false
