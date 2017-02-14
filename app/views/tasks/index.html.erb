@@ -1,4 +1,8 @@
 <% @tasks.each do |task| %>
   <h2><%= task.name %></h2>
   <p><%= task.done %></p>
+  <p><%= task.created_at %></p>
 <% end %>
+
+<%= link_to "index", tasks_path %>
+<%= link_to "new", new_task_path %>
